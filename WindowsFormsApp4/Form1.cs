@@ -27,6 +27,7 @@ namespace WindowsFormsApp4
             InitializeComponent();
         }
 
+        // This part of the code calculates the velocity over time  
         private void calculateVelocity()
         {
             for (int i = 1; i < table.Count; i++)
@@ -37,6 +38,7 @@ namespace WindowsFormsApp4
             }
         }
 
+        //
         private void calculateAcceleration()
         {
             for (int i = 1; i < table.Count; i++)
@@ -53,6 +55,7 @@ namespace WindowsFormsApp4
 
         }
 
+        //
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1.FileName = "";
@@ -102,6 +105,7 @@ namespace WindowsFormsApp4
 
         }
 
+        // this part of the code draws the time over velocity graph for the program
         private void velocityToolStripMenuItem_Click(object sender, EventArgs e)
         {
             chart1.Series.Clear();
@@ -125,6 +129,7 @@ namespace WindowsFormsApp4
             chart1.ChartAreas[0].RecalculateAxesScale();
         }
 
+        // this part of code draws the graph to which shows time over acceleration for the program 
         private void accelerationToolStripMenuItem_Click(object sender, EventArgs e)
         {
             chart1.Series.Clear();
@@ -148,6 +153,7 @@ namespace WindowsFormsApp4
             chart1.ChartAreas[0].RecalculateAxesScale();
         }
 
+        // These following lines of code are which draws the graph to show time over altitude development for the program 
         private void altitudeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             chart1.Series.Clear();
@@ -171,6 +177,7 @@ namespace WindowsFormsApp4
             chart1.ChartAreas[0].RecalculateAxesScale();
         }
 
+        // this part of the code is what saves the CSV file on the tool strip menu 
         private void saveCSVToolStripMenuItem_Click(object sender, EventArgs e)
         {
             saveFileDialog1.FileName = "";
@@ -197,6 +204,7 @@ namespace WindowsFormsApp4
             }
         }
 
+        // this section of code operates to save PNG files on the tool strip menu for the program 
         private void savePNGToolStripMenuItem_Click(object sender, EventArgs e)
         {
             saveFileDialog1.FileName = "";
