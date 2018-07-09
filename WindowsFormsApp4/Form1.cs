@@ -38,7 +38,7 @@ namespace WindowsFormsApp4
             }
         }
 
-        //
+        //This section of code is that which calculates the accelleration for the program 
         private void calculateAcceleration()
         {
             for (int i = 1; i < table.Count; i++)
@@ -55,7 +55,7 @@ namespace WindowsFormsApp4
 
         }
 
-        //
+        //this section of code is which opens the files within the program
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1.FileName = "";
